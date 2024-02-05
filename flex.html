@@ -81,7 +81,10 @@ Description : Flex Layouts.
         
         .news-item { padding: 10px; }
         .row { 
+			display: flex;
 			/*I need some CSS codes.*/
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
         
 
@@ -89,21 +92,40 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				width:100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width:70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width:30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			}
+			.large { 
+				/*I need some CSS codes.*/
+				width:100%;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width:60%;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width:40%;
+			 }    
+
             .menu ul { 
 				/*I need some CSS codes.*/
+				display: flex;
+				flex-direction: row;
 			 }            
             /*I need some CSS codes.*/
         }
@@ -112,6 +134,8 @@ Description : Flex Layouts.
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
+				
+				width:100%;
 			 }
         }
     </style>
