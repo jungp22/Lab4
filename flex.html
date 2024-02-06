@@ -71,9 +71,15 @@ Description : Flex Layouts.
 			/*I need some CSS codes.*/
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
+		
 		.body { 
+			display: flex;
+			/*I need some CSS codes.*/
+			flex-direction: row;
+			flex-wrap: wrap;
 			/*I need some CSS codes.*/
 		}
+
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
@@ -90,6 +96,7 @@ Description : Flex Layouts.
 
         @media screen and (min-width: 769px) {
             .menu { width: 150px; }     
+			.main { width: calc(100% - 150px);}
 			.large { 
 				/*I need some CSS codes.*/
 				width:100%;
@@ -126,8 +133,12 @@ Description : Flex Layouts.
 				/*I need some CSS codes.*/
 				display: flex;
 				flex-direction: row;
-			 }            
-            /*I need some CSS codes.*/
+				
+			 }  
+			 .menu{
+				width:100%;
+			 }   
+			 /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
@@ -137,6 +148,8 @@ Description : Flex Layouts.
 				
 				width:100%;
 			 }
+			
+   
         }
     </style>
 </head>
