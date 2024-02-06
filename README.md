@@ -3,7 +3,7 @@
 * This lab covers the following aspects of web development: 
     * CSS with Flex 
     * Responsive web design
-* It also covers managing  Git repositories through VS Code 
+* It also covers managing Git repositories through VS Code and markdown formatting
 
 ## Team Members
 | Name |
